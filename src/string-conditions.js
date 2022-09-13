@@ -24,16 +24,28 @@ if (STR_THREE.length > STR_FOUR.length) {
 // Use a combination of a loop and conditional statements to set answerFour
 // to false if STR_FIVE has an odd number of vowels, or true if it has an
 // even number
-// const STR_FIVE = 'Alex'
+const STR_FIVE = 'Alex'
 
-let answerFour
-
+const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+let VowelsCount1 = 0
+for (let i = 0; i < STR_FIVE.length; i++) {
+  if (vowels.includes(STR_FIVE[i].toLowerCase())) {
+    VowelsCount1 += 1
+  }
+}
+const answerFour = VowelsCount1 % 2 === 0
 // Use a combination of a loop and conditional statements to set answerFive
 // to false if STR_SIX has an odd number of vowels, or true if it has an
 // even number
-// const STR_SIX = 'Joanna'
+const STR_SIX = 'Joanna'
+let VowelsCount = 0
+for (let i = 0; i < STR_SIX.length; i++) {
+  if (vowels.includes(STR_SIX[i])) {
+    VowelsCount += 1
+  }
+}
 
-let answerFive
+const answerFive = VowelsCount % 2 === 0
 
 // Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
